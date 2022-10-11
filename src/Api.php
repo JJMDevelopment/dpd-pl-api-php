@@ -240,6 +240,7 @@ class Api
                 $this->getWsdl($clientClass),
                 [
                     'cache_wsdl' => WSDL_CACHE_NONE,
+                    'keep_alive' => false
                 ])
                 ->withClassMap($this->getClassMaps()),
             HttPlugHandle::createWithDefaultClient()
